@@ -22,7 +22,7 @@ function DeckList(){
 
     useEffect(() => {
         listDecks().then(setDecks);
-    }, [change])
+    }, [setDecks])
 
     
     let deckList = '';

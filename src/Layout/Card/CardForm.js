@@ -30,7 +30,7 @@ function CardForm(){
 
     
         return () => abortController.abort();
-    }, [])
+    }, [cardId, deckId])
     const handleSubmit = async () => {
         if(cardId){
             await updateCard({...card, front:formData.front, back:formData.back});

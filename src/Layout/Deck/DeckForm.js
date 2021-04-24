@@ -23,7 +23,7 @@ function DeckForm(){
                 .then((deck) => setFormData({name: deck.name, description: deck.description}));
         }
         return () => abortController.abort();
-    }, [])
+    }, [deckId])
 
 
 

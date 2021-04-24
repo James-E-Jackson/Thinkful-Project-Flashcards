@@ -15,7 +15,7 @@ function StudyDeck(){
     
     useEffect(() => {     
         readDeck(deckId).then(setDeck);
-    }, [])
+    }, [deckId])
 
     const handelFlip = () => {setFront(!front)}
     const handleNext = () => {
@@ -31,7 +31,6 @@ function StudyDeck(){
                 history.push("/");
             }
         }
-       
     }
     
     if(deck.length===0) return <p>Loading...</p>

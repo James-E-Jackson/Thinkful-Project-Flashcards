@@ -18,7 +18,7 @@ function ViewDeck(){
         }
         return () => abortController.abort();
         
-    }, [change])
+    }, [deckId])
 
     const handleDelete = async (event) => {
         const result = window.confirm("Are you sure you want to delete this deck?");
